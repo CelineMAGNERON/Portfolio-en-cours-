@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="monPortfolio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio de Celine Magneron" />
+</head>
+
+<body>
+    <section class="affichage">
+        <div class="affichageBody">
+            <div class="container">
+                <div class="colonnes">
+                
+                   <!-- Présentation -->
+                   <div id="section_principale" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="profile">
+                           <div class="profile_details">
+                                <div class="photo"><img src="https://i.pinimg.com/originals/4d/08/6d/4d086dd6bbc1f797b14daaf7405057a5.png" /></div>
+                                <h3 class="identite">Céline Magneron</h3>
+                                <h6>Développeuse web front end junior</h6>
+                                <div class="social-icons">
+                                    <a href="https://www.linkedin.com/in/c%C3%A9line-magneron-861253138/"><i class="fab fa-linkedin icon"></i></a>
+                                    <a href="https://github.com/CelineMAGNERON"><i class="fab fa-github icon"></i></a>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Interaction avec l'utilisateur -->
+                    <div id="interactions" class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                        <div class="terminal">
+                           <div class="invite">invité@magneron: ~</div>
+                        </div>
+                        <div class="terminal_utilisateur" onclick="document.getElementById('dummyKeyboard').focus();">
+                            <div class="terminal_ecrire" id="terminalEcrire">
+                                <div class="terminal_texte">
+                                    <span class="bonjour-msg">Bienvenue dans mon portfolio — Tapez <span class="code">"Bonjour"</span> pour afficher la liste des commandes supportées.</span>
+                                </div>
+                            </div>
+                            <div class="terminal_texte">
+                                <span class="success">➜</span>
+                                <span class="directory">~</span>
+                                <span class="user-input" id="userInput"></span>
+                                <input type="text" id="dummyKeyboard" class="dummy-keyboard">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="signature">
+                <p>
+                    Crée avec <i class="fas fa-heart icon"></i> par Céline Magneron.
+                </p>
+            </div>
+        </footer>
+        
+    </section>
+</body>
+
+</html>
